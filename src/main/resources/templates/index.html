@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title th:text="${titulo}"></title>
+<script src="./main.js" type="module"></script>
+</head>
+<body>
+	<form name="logueo" id="logueo">
+		<input type="text" placeholder="Email" name="email" id="email">
+		<input type="password" placeholder="Contraseña" name="pwd" id="pwd">
+		<input type="submit" value="Iniciar sesion" id="btn-iniciarSesion">
+	</form>
+	<form name="registro" id="registro">
+		<input type="text" placeholder="Nombre" name="nombre" id="nombreUsuario">
+		<input type="text" placeholder="Apellido" name="apellido" id="apellidoUsuario">
+		<input type="text" placeholder="DNI" name="DNI" id="dniUsuario">
+		<input type="text" placeholder="Email" name="email" id="emailUsuario">
+		<input type="password" placeholder="Contraseña" id="pwdUsuario">
+		<input type="password" placeholder="Repetir contraseña" id="repetirPWD">
+		<input type="submit" value="Registrarse" id="btn-registrarse">
+	</form>
+</body>
+</html>
